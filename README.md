@@ -6,10 +6,10 @@ Le thème principal de ce sujet est la comparaison de différents outils de mach
 
 Pour cette comparaison, nous allons traiter des données textuelles qui serviront pour faire de la prédiction d'émotions.  
 
-Le fichier d'entrainement contient 5 émotions qui seront testées sur pycaret mais aussi from scratch. L'idée est de comparer également ces outlils en terme de temps et de ressources utilisées.  
+Le fichier d'entrainement contient 6 émotions qui seront testées sur pycaret mais aussi from scratch. L'idée est de comparer également ces outlils en terme de temps et de ressources utilisées.  
 
 Par la suite, nous devons aussi prétraiter le fichier de test qui contient des colonnes supplémentaires ainsi que 14 émotions.  
-Avec cet enrichissement de données, il a fallu recréer de nouveaux modèles entrainés non plus sur 5 émotions mais sur 14.  
+Avec cet enrichissement de données, il a fallu recréer de nouveaux modèles entrainés non plus sur 6 émotions mais sur 14.  
 
 En parrallèle, nous avons aussi tester nos données sur DataRobot. 
 
