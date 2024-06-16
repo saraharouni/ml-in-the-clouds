@@ -95,3 +95,13 @@ C'est une plateforme de machine learning automatisée qui aide les data scientis
 
 [DataRobot](https://www.datarobot.com)
 
+# Analyse et évaluation des modèles  
+
+## Data Robot
+
+## From Scratch
+
+## Pycaret
+
+# Conclusion
+
