@@ -95,9 +95,19 @@ C'est une plateforme de machine learning automatisée qui aide les data scientis
 
 [DataRobot](https://www.datarobot.com)
 
-# Analyse et évaluation des modèles  
+# Analyse et évaluation des modèles
 
 ## Data Robot
+
+Les modèles évalué sur data robot sont les modèles linéaires et logistiques, utilisés pour les tâches de régression et de classification, les arbres de décisions et forêts aleatoires utilisés pour la classification et la régression, le GBMs (Gradient Boosting Machines) qui est un modèle puisant pour une variété de tâches prédictives, ainsi que le réseaux de neurones utilisé pour des tâches complexes comme la reconnaissance d'images ou la prédiction de séries temporelles.
+
+Chaque modèle peut être analysé en terme d'archtecture, paramètres et données d'entrée. Le traitement des modèles sur DataRobot suit généralement plusieurs étapes qui sont: La préparation des données, qui consiste dans le nettoyage, la trasformation et le partitionnement des données en ensembe d'entrainement et de test, la sélection de modèle, DataRobot teste plusieurs algorithemes pour trouver ceux qui sont les plus performants par rapport aux données ensuite il procéde à un validation croisé appelé k-fold pour estimer la performance du modèle ce qui lui permet de finir son analyse sur l'optimisation des hyperparamètres pour ameliorer la performance du modèle.
+
+L'évaluation des modèles sur DataRobot se fait par le biais de plusieurs métriques et techniques comme la métrique de performance AOC-ROC, précision, rappel, F1-score pour les modèles de classification et RMSE, MAE pour les modèles de régression. Il utilise aussi la courbe de pérformance (ROC, Courbe de gain...). Enfin à travers l'explicabilité des modèles nous avons l'importance des variables et interprétation des coefficients.
+
+Pour interpreter les résultats, DataRobot souligne l'importance de l'identification des variables qui ont le plus contribué aux prédiction du modèle. Il utilise PDPs (Partial Dependance Plot) qui permet la visualisation de l'effet des variables individuelles sur la prédiction du modèle, SHAP (SHapley Addictive exPlanation) qui fournit une explication locale des prédictions en attribuant à chaque feature une valeur d'inportance et le Residual Analysis qui analyse des résidus pour identifier des patterns non capturés par le modèle.
+
+Pour communiquer les résultats obtenus DataRobot utilise des rapport de visualisation comme des graphiques et des tableaux pour illustrer les performances et l'importance des variables. 
 
 ## From Scratch
 
