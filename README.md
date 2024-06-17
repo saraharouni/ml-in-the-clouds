@@ -105,13 +105,47 @@ Chaque modèle peut être analysé en terme d'archtecture, paramètres et donné
 
 L'évaluation des modèles sur DataRobot se fait par le biais de plusieurs métriques et techniques comme la métrique de performance AOC-ROC, précision, rappel, F1-score pour les modèles de classification et RMSE, MAE pour les modèles de régression. Il utilise aussi la courbe de pérformance (ROC, Courbe de gain...). Enfin à travers l'explicabilité des modèles nous avons l'importance des variables et interprétation des coefficients.
 
-Pour interpreter les résultats, DataRobot souligne l'importance de l'identification des variables qui ont le plus contribué aux prédiction du modèle. Il utilise PDPs (Partial Dependance Plot) qui permet la visualisation de l'effet des variables individuelles sur la prédiction du modèle, SHAP (SHapley Addictive exPlanation) qui fournit une explication locale des prédictions en attribuant à chaque feature une valeur d'inportance et le Residual Analysis qui analyse des résidus pour identifier des patterns non capturés par le modèle.
-
 Pour communiquer les résultats obtenus DataRobot utilise des rapport de visualisation comme des graphiques et des tableaux pour illustrer les performances et l'importance des variables. 
 
-## From Scratch
+## From Scratch  
+
+Nous avons réalisés différents modèles afin de tester le fichier train et le fichier test (qui contenait plus de classes que le train).  
+Les modèles créés pour prédire 6 émotions ont obtenu de très bon score notament le modèle Extra Tree Classifier (accuracy à 0.89).  
+Toutefois les résultats des modèles utilisés avec le fichier test, ont obtenu des scores plus bas (0.55 d'accuracy pour le meilleur modèle).
 
 ## Pycaret
 
-# Conclusion
+Nous avons utilisé Pycaret comme deuxième méthode pour créer et évaluer des modèles sur le fichier test.  
+Cette librairie est intuitive et permet de créer des modèles avec peu de lignes de code. Toutefois, le temps d'exécution de certaines tâches peuvent être très long (jusqu'à 1h 45min....)  
+De plus, le meilleur modèle obtient une accuracy de 0,50 soit une moins bonne performance que from scratch.
 
+## Avantages et inconvénients de chaque méthode :  
+
+* From Scratch :
+    * Avantages :
+        - Gratuit
+        - Temps de calcul rapide
+        - Visibilité totale et optimisation du modèle et des données
+    * Inconvénient :
+        - Nécessite des connaissances en codage et en data science
+
+* Pycaret :
+    * Avantages :
+        - Gratuit 
+        - Peu de lignes de code pour créer un modèle et l’évaluer
+        - Contient plusieurs graphiques de visualisations
+    * Inconvénients :
+        - Temps de calcul et d'exécution très long
+        - Personnalisation des paramètres plus complexe
+
+* DataRobot :
+    * Avantages :
+        - Low-code
+        - Contient plusieurs graphiques et visualisations
+    * Inconvénients :
+        - Payant
+        - Peu de visibilité sur le code et optimisation des paramètres
+            
+
+# Conclusion
+Le MLAAS et l'AutoMl 
